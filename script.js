@@ -104,7 +104,7 @@ $(document).ready(function () {
             {
                 breakpoint: 640,
                 settings: {
-                    dots: true,
+                    dots: false,
                     slidesToShow: 3,
                 }
             }
