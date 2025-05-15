@@ -1,27 +1,27 @@
 const contents = [
     {
         text: "Our franchise partners gain access to a diverse portfolio of 7 lakh+ SKUs, covering prescription medicines, OTC products, and healthcare essentials, ensuring a one-stop solution for customers",
-        image: "/images/icon2/icon2.svg"
+        image: "images/icon2/icon2.svg"
     },
     {
         text: "We source all our medicines from trusted and certified manufacturers, ensuring that customers receive safe, high-quality, and authentic pharmaceutical products at competitive prices.",
-        image: "/images/icon2/icon1.svg"
+        image: "images/icon2/icon1.svg"
     },
     {
         text: "We have been a trusted name in the pharmaceutical industry since 2015, offering a strong foundation for franchise partners.",
-        image: "/images/icon2/icon3.svg"
+        image: "images/icon2/icon3.svg"
     },
     {
         text: "Our deep understanding of local markets helps us support franchise partners with smarter stocking strategies, customer preferences, pricing and more.",
-        image: "/images/icon2/icon4.svg"
+        image: "images/icon2/icon4.svg"
     },
     {
         text: "eMedix’s business blueprint is tried and tested, with successful partners already thriving in regions like Ranchi, Ramnagri, Raxaul, etc.",
-        image: "/images/icon2/icon5.svg"
+        image: "images/icon2/icon5.svg"
     },
     {
         text: "You own 100% of your store with no commissions, royalties, or binding lock-in periods. That means full profits, full freedom, and no pressure to continue if you choose to exit.",
-        image: "/images/icon2/icon6.svg"
+        image: "images/icon2/icon6.svg"
     }
 ];
 
