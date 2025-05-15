@@ -87,7 +87,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.brand-slider').slick({
-        slidesToShow: 8,
+        slidesToShow: 6,
         slidesToScroll: 1,
         arrows: false,
         infinite: true,
@@ -105,7 +105,7 @@ $(document).ready(function () {
                 breakpoint: 640,
                 settings: {
                     dots: false,
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             }
         ]
