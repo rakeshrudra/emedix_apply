@@ -10,12 +10,23 @@
     <meta name="author" content="eMedix Wellness Pvt Ltd">
     <meta name="robots" content="index, follow">
     <title>Start Your Own Pharmacy Business</title>
+    <link rel="preload" fetchpriority="high" as="image" href="images/banner.webp" imagesrcset="images/mb.webp 768w, images/banner.webp 1200w" imagesizes="(max-width: 768px) 100vw, 1200px">   
+    <link rel="preload" href="images/covge/slide1.webp" as="image">
+    <link rel="preload" href="images/covge/slide2.webp" as="image">
+    <link rel="preload" href="images/covge/slide3.webp" as="image">
+    <link rel="preload" href="images/covge/slide4.webp" as="image">
+    <link rel="preload" href="images/covge/slide5.webp" as="image">
+    <link rel="preload" href="images/covge/slide6.webp" as="image">
+    <link rel="preload" href="images/covge/slide7.webp" as="image">
+    <link rel="preload" href="images/covge/slide8.webp" as="image">
+    <link rel="preload" href="images/covge/slide9.webp" as="image">
+    <link rel="preload" href="images/covge/slide10.webp" as="image">
+    <link rel="preload" href="images/covge/slide11.webp" as="image">
+    <link rel="preload" href="images/covge/slide12.webp" as="image">
+    <link rel="preload" href="images/covge/slide13.webp" as="image">
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -51,14 +62,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <div id="loading">
+    <!-- <div id="loading">
         <div class="loader"></div>
-    </div>
+    </div> -->
     <!-- Header -->
     <header class="shadow-[0_4px_7.4px_rgba(61, 65, 76, 0.03)] bg-white ">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="images/logo.png" alt="eMedix Logo" class="h-10">
+                <img  src="images/logo.webp" alt="eMedix Logo" class="h-10">
             </div>
 
             <button @click="open = true" class="bg-primary cursor-pointer px-[24px]  md:px-[32px] montserrat text-white py-[13px] rounded-full text-sm md:text-base flex font-medium" aria-label="Enquire Now flex">Enquire Now
@@ -71,8 +82,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </header>
 
     <!-- Hero Section -->
-    <section id="contact" class="py-10 pt-[168px] pt-md-0 md:py-16 bg-cover bg-center" style="background-image: url('images/banner.jpg');">
-        <div class="container mx-auto px-4 flex justify-between flex-col md:flex-row items-center">
+    <section id="contact" class="py-10 pt-[168px] pt-md-0 md:py-16 relative">
+        <div class="absolute inset-0 z-0">
+            <img fetchpriority="high" src="images/banner.webp" srcset="images/mb.webp 768w, images/banner.webp 1200w" sizes="(max-width: 768px) 100vw, 1200px" alt="eMedix Hero Banner" class="w-full h-full object-cover">        
+</div>
+        <div class="container mx-auto px-4 flex justify-between flex-col md:flex-row items-center relative z-10">
             <div class="md:w-[55%] mb-8 md:mb-0">
                 <h1 class="text-[27px] md:text-[46px] leading-[40px] text-left md:leading-[60px] font-bold text-black mb-[25px] md:pe-16">Start your own pharmacy business <span class="text-primary">without any pharma background.</span></h1>
                 <ul class="space-y-2 text-gray-600 flex md:flex-row  items-center justify-start mb-[36px] flex-wrap">
@@ -105,7 +119,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="md:w-1/3 bg-white p-6 rounded-lg shadow-lg hidden md:block">
                 <h2 class="text-xl font-bold mb-4">Easy-to-start business opportunity!</h2>
                 <p class="text-gray-600 mb-4">Fill in your details and let our team get back to you.</p>
-               <iframe loading="lazy" src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 470px;" id="myIframe"> </iframe>
+               <iframe  src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 470px;" id="myIframe"> </iframe>
             </div>
         </div>
     </section>
@@ -114,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-lg block shadow-md ">
                 <h2 class="text-xl font-bold mb-4">Easy-to-start business opportunity!</h2>
                 <p class="text-gray-600 mb-4">Fill in your details and let our team get back to you.</p>
-               <iframe loading="lazy" src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 470px;" id="myIframe"> </iframe>
+               <iframe  src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 470px;" id="myIframe"> </iframe>
             </div>
         </div>
     </section>
@@ -126,7 +140,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div>
                     <div class="bg-white p-6 rounded-lg text-left flex flex-col h-full">
                         <div class="mb-10">
-                            <img src="images/icon-1.svg" alt="Low Investment" />
+                            <img  src="images/icon-1.svg" alt="Low Investment" />
                         </div>
                         <h3 class="text-base font-semibold montserrat mb-4 text-black">Low Investment, High Returns</h3>
                         <p class="text-gray-600 roboto text-sm flex-1">eMedix offers a low-cost entry pharmacy franchise model with initial expense of 10-15 Lakhs.</p>
@@ -135,7 +149,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div>
                     <div class="bg-white p-6 rounded-lg text-left flex flex-col h-full">
                         <div class="mb-10">
-                            <img src="images/icon-2.svg" alt="Dynamic inventor" />
+                            <img  src="images/icon-2.svg" alt="Dynamic inventor" />
                         </div>
                         <h3 class="text-base font-semibold montserrat mb-4 text-black">Dynamic inventory management model</h3>
                         <p class="text-gray-600 roboto text-sm flex-1">Our AI-enabled predictive analysis ensures you get the right stock at the right time, tailored to real-time demand.</p>
@@ -144,7 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div>
                     <div class="bg-white p-6 rounded-lg text-left flex flex-col h-full">
                         <div class="mb-10">
-                            <img src="images/icon-3.svg" alt="No Stock" />
+                            <img  src="images/icon-3.svg" alt="No Stock" />
                         </div>
                         <h3 class="text-base font-semibold montserrat mb-4 text-black">No Stock Shortages</h3>
                         <p class="text-gray-600 roboto text-sm flex-1">With its local warehouse in Patna, eMedix ensures same-day or next-day delivery of stock.</p>
@@ -153,7 +167,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div>
                     <div class="bg-white p-6 rounded-lg text-left flex flex-col h-full">
                         <div class="mb-10">
-                            <img src="images/icon-4.svg" alt="Exclusive Territory" />
+                            <img  src="images/icon-4.svg" alt="Exclusive Territory" />
                         </div>
                         <h3 class="text-base font-semibold montserrat mb-4 text-black">Exclusive Territory Rights</h3>
                         <p class="text-gray-600 roboto text-sm flex-1">Our partners enjoy complete monopoly rights in their designated regions without direct competition and gain better profit margins.</p>
@@ -371,7 +385,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <!-- Right Content Card -->
                         <div id="content" class="bg-[#e7fdfb] rounded-[26px] pt-[55px] px-[50px] md:p-10 border border-white">
                             <div class="text-teal-600 text-4xl border-b border-[#rgba(0, 0, 0, 0.13)] pb-[40px]">
-                                <img src="images/icon2/icon2.svg" alt="Our franchise" id="icon" />
+                                <img  src="images/icon2/icon2.svg" alt="Our franchise" id="icon" />
                             </div>
                             <p class="text-black leading-relaxed font-normal roboto text-[22px] pt-[40px]" id="contentText">
                                 Our franchise partners gain access to a diverse portfolio of 7 lakh+ SKUs, covering prescription medicines, OTC products, and healthcare essentials, ensuring a one-stop solution for customers
@@ -395,7 +409,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         x-transition:leave-end="opacity-0 max-h-0" class="text-sm roboto font-normal text-gray  pb-4 overflow-hidden">
                             <div id="content" class="bg-[#e7fdfb] rounded-[26px] pt-[37px] px-[33px] pb-6 border border-white">
                                 <div class="text-teal-600 text-4xl border-b border-[#rgba(0, 0, 0, 0.13)] pb-[27px]">
-                                    <img src="images/icon2/icon2.svg" alt="pharmaceutical products" id="icon" />
+                                    <img  src="images/icon2/icon2.svg" alt="pharmaceutical products" id="icon" />
                                 </div>
                                 <p class="text-black leading-relaxed font-normal roboto text-base  pt-[27px]" id="contentText">
                                     Our franchise partners gain access to a diverse portfolio of 7 lakh+ SKUs, covering prescription medicines, OTC products, and healthcare essentials, ensuring a one-stop solution for customers
@@ -419,7 +433,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         x-transition:leave-end="opacity-0 max-h-0" class="text-sm roboto font-normal text-gray pb-4 overflow-hidden">
                             <div id="content" class="bg-[#e7fdfb] rounded-[26px] pt-[37px] px-[33px] pb-6 border border-white">
                                 <div class="text-teal-600 text-4xl border-b border-[#rgba(0, 0, 0, 0.13)] pb-[27px]">
-                                    <img src="images/icon2/icon1.svg" alt="High quality medicines" id="icon" />
+                                    <img  src="images/icon2/icon1.svg" alt="High quality medicines" id="icon" />
                                 </div>
                                 <p class="text-black leading-relaxed font-normal roboto text-base  pt-[27px]" id="contentText">
                                     We source all our medicines from trusted and certified manufacturers, ensuring that customers receive safe, high-quality, and authentic pharmaceutical products at competitive prices.
@@ -443,7 +457,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         x-transition:leave-end="opacity-0 max-h-0" class="text-sm roboto font-normal text-gray pb-4 overflow-hidden">
                             <div id="content" class="bg-[#e7fdfb] rounded-[26px] pt-[37px] px-[33px] pb-6 border border-white">
                                 <div class="text-teal-600 text-4xl border-b border-[#rgba(0, 0, 0, 0.13)] pb-[27px]">
-                                    <img src="images/icon2/icon3.svg" alt="Trusted" id="icon" />
+                                    <img  src="images/icon2/icon3.svg" alt="Trusted" id="icon" />
                                 </div>
                                 <p class="text-black leading-relaxed font-normal roboto text-base  pt-[27px]" id="contentText">
                                     We have been a trusted name in the pharmaceutical industry since 2015, offering a strong foundation for franchise partners.
@@ -467,7 +481,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         x-transition:leave-end="opacity-0 max-h-0" class="text-sm roboto font-normal text-gray pb-4 overflow-hidden">
                             <div id="content" class="bg-[#e7fdfb] rounded-[26px] pt-[37px] px-[33px] pb-6 border border-white">
                                 <div class="text-teal-600 text-4xl border-b border-[#rgba(0, 0, 0, 0.13)] pb-[27px]">
-                                    <img src="images/icon2/icon4.svg" alt="Regional knowledge" id="icon" />
+                                    <img  src="images/icon2/icon4.svg" alt="Regional knowledge" id="icon" />
                                 </div>
                                 <p class="text-black leading-relaxed font-normal roboto text-base  pt-[27px]" id="contentText">
                                     Our deep understanding of local markets helps us support franchise partners with smarter stocking strategies, customer preferences, pricing and more.
@@ -491,10 +505,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         x-transition:leave-end="opacity-0 max-h-0" class="text-sm roboto font-normal text-gray  pb-4 overflow-hidden">
                             <div id="content" class="bg-[#e7fdfb] rounded-[26px] pt-[37px] px-[33px] pb-6 border border-white">
                                 <div class="text-teal-600 text-4xl border-b border-[#rgba(0, 0, 0, 0.13)] pb-[27px]">
-                                    <img src="images/icon2/icon5.svg" alt=" Proven business model" id="icon" />
+                                    <img  src="images/icon2/icon5.svg" alt=" Proven business model" id="icon" />
                                 </div>
                                 <p class="text-black leading-relaxed font-normal roboto text-base  pt-[27px]" id="contentText">
-                                    eMedix’s business blueprint is tried and tested, with successful partners already thriving in regions like Ranchi, Ramnagri, Raxaul, etc.
+                                    eMedix's business blueprint is tried and tested, with successful partners already thriving in regions like Ranchi, Ramnagri, Raxaul, etc.
                                 </p>
                             </div>
                         </div>
@@ -515,7 +529,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         x-transition:leave-end="opacity-0 max-h-0" class="text-sm roboto font-normal text-gray pb-4 overflow-hidden">
                             <div id="content" class="bg-[#e7fdfb] rounded-[26px] pt-[37px] px-[33px] pb-6 border border-white">
                                 <div class="text-teal-600 text-4xl border-b border-[#rgba(0, 0, 0, 0.13)] pb-[27px]">
-                                    <img src="images/icon2/icon6.svg" alt="Long-term ownership" id="icon" />
+                                    <img  src="images/icon2/icon6.svg" alt="Long-term ownership" id="icon" />
                                 </div>
                                 <p class="text-black leading-relaxed font-normal roboto text-base  pt-[27px]" id="contentText">
                                     You own 100% of your store with no commissions, royalties, or binding lock-in periods. That means full profits, full freedom, and no pressure to continue if you choose to exit.
@@ -540,45 +554,110 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </div>
 
-            <div class="news-slider space-y-6">
+            <div class="news-slider space-y-6 overflow-hidden">
                 <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide1.jpg" alt="News 1" class="rounded-xl max-w-full" />
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide2.jpg" alt="News 2" class="rounded-xl max-w-full" />
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide3.jpg" alt="News 3" class="rounded-xl max-w-full" />
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide4.jpg" alt="News 4" class="rounded-xl max-w-full" />
+                    <img  
+                         src="images/covge/slide1.webp"
+                         srcset="images/covge/slide1.webp 209w, images/covge/slide1.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 1" 
+                         class="rounded-xl max-w-full" />
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide5.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                    <img  
+                         src="images/covge/slide2.webp"
+                         srcset="images/covge/slide2.webp 209w, images/covge/slide2.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 2" 
+                         class="rounded-xl max-w-full" />
                 </div>
-<div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide6.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide3.webp"
+                         srcset="images/covge/slide3.webp 209w, images/covge/slide3.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 3" 
+                         class="rounded-xl max-w-full" />
                 </div>
-<div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide7.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide4.webp"
+                         srcset="images/covge/slide4.webp 209w, images/covge/slide4.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 4" 
+                         class="rounded-xl max-w-full" />
                 </div>
-<div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide8.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide5.webp"
+                         srcset="images/covge/slide5.webp 209w, images/covge/slide5.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 5" 
+                         class="rounded-xl max-w-full" />
                 </div>
-<div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide9.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide6.webp"
+                         srcset="images/covge/slide6.webp 209w, images/covge/slide6.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 6" 
+                         class="rounded-xl max-w-full" />
                 </div>
-<div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide10.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide7.webp"
+                         srcset="images/covge/slide.webp 209w, images/covge/slide7.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 7" 
+                         class="rounded-xl max-w-full" />
                 </div>
-<div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide11.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide8.webp"
+                         srcset="images/covge/slide8.webp 209w, images/covge/slide8.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 8" 
+                         class="rounded-xl max-w-full" />
                 </div>
-<div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide12.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide9.webp"
+                         srcset="images/covge/slide9.webp 209w, images/covge/slide9.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 9" 
+                         class="rounded-xl max-w-full" />
                 </div>
-<div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
-                    <img src="images/slide13.jpg" alt="News 1" class="rounded-xl max-w-full" />
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide10.webp"
+                         srcset="images/covge/slide10.webp 209w, images/covge/slide10.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 10" 
+                         class="rounded-xl max-w-full" />
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide11.webp"
+                         srcset="images/covge/slide11.webp 209w, images/covge/slide11.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 11" 
+                         class="rounded-xl max-w-full" />
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide12.webp"
+                         srcset="images/covge/slide12.webp 209w, images/covge/slide12.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 12" 
+                         class="rounded-xl max-w-full" />
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-md bg-[#F7F7F7] p-8">
+                    <img  
+                         src="images/covge/slide13.webp"
+                         srcset="images/covge/slide13.webp 209w, images/covge/slide13.webp 418w"
+                         sizes="(max-width: 768px) 209px, 418px"
+                         alt="News 13" 
+                         class="rounded-xl max-w-full" />
                 </div>
             </div>
             <div class="space-x-4 flex block md:hidden justify-center">
@@ -598,65 +677,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="relative mb-5 md:pb-0">
                 <div class="absolute top-0 left-0 h-full w-46 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent hidden md:block"></div>
                 <div class="absolute top-0 right-0 h-full w-46 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent hidden md:block"></div>
-                <div class="brand-slider">
-                    <div><img src="images/brand/c1.jpg" alt="Abbott Logo" class="h-12 mx-auto"></div>
-                    <div><img src="images/brand/c2.jpg" alt="Sun Pharma Logo" class="h-12 mx-auto"></div>
-                    <div><img src="images/brand/c4.jpg" alt="client 4" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c5.jpg" alt="client 5" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c6.jpg" alt="client 6" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c7.jpg" alt="client 7" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c8.jpg" alt="client 8" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c9.jpg" alt="client 9" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c10.jpg" alt="client 10" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c11.jpg" alt="client 11" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c12.jpg" alt="client 12" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c13.jpg" alt="client 13" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c14.jpg" alt="client 14" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c15.jpg" alt="client 15" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c16.jpg" alt="client 16" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c17.jpg" alt="client 17" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c18.jpg" alt="client 18" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c19.jpg" alt="client 19" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c20.jpg" alt="client 20" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c21.jpg" alt="client 21" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c22.jpg" alt="client 22" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c23.jpg" alt="client 23" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c24.jpg" alt="client 24" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c25.jpg" alt="client 25" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c26.jpg" alt="client 26" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c27.jpg" alt="client 27" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c28.jpg" alt="client 28" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c29.jpg" alt="client 29" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c30.jpg" alt="client 30" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c31.jpg" alt="client 31" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c32.jpg" alt="client 32" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c33.jpg" alt="client 33" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c34.jpg" alt="client 34" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c35.jpg" alt="client 35" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c36.jpg" alt="client 36" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c37.jpg" alt="client37" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c38.jpg" alt="client 38" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c39.jpg" alt="client 39" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c40.jpg" alt="client 40" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c41.jpg" alt="client 41" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c42.jpg" alt="client 42" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c43.jpg" alt="client 43" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c44.jpg" alt="client 44" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c45.jpg" alt="client 45" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c46.jpg" alt="client 46" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c47.jpg" alt="client 47" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c48.jpg" alt="client 48" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c49.jpg" alt="client 49" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c50.jpg" alt="client 50" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c51.jpg" alt="client 51" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c52.jpg" alt="client 52" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c53.jpg" alt="client 53" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c54.jpg" alt="client 54" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c55.jpg" alt="client 55" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c56.jpg" alt="client 56" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c57.jpg" alt="client 56" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c58.jpg" alt="client 57" class="max-w-[100%] mx-auto"></div>
-                    <div><img src="images/brand/c59.jpg" alt="client 58" class="max-w-[100%] mx-auto"></div>
+                <div class="brand-slider overflow-hidden">
+                    <div><img  src="images/brandWebp/c1.webp" alt="Abbott Logo" class="h-12 mx-auto"></div>
+                    <div><img  src="images/brandWebp/c2.webp" alt="Sun Pharma Logo" class="h-12 mx-auto"></div>
+                    <div><img  src="images/brandWebp/c4.webp" alt="client 4" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c5.webp" alt="client 5" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c6.webp" alt="client 6" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c7.webp" alt="client 7" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c8.webp" alt="client 8" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c9.webp" alt="client 9" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c10.webp" alt="client 10" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c11.webp" alt="client 11" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c12.webp" alt="client 12" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c13.webp" alt="client 13" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c14.webp" alt="client 14" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c15.webp" alt="client 15" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c16.webp" alt="client 16" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c17.webp" alt="client 17" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c18.webp" alt="client 18" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c19.webp" alt="client 19" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c20.webp" alt="client 20" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c21.webp" alt="client 21" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c22.webp" alt="client 22" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c23.webp" alt="client 23" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c24.webp" alt="client 24" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c25.webp" alt="client 25" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c26.webp" alt="client 26" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c27.webp" alt="client 27" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c28.webp" alt="client 28" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c29.webp" alt="client 29" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c30.webp" alt="client 30" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c31.webp" alt="client 31" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c32.webp" alt="client 32" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c33.webp" alt="client 33" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c34.webp" alt="client 34" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c35.webp" alt="client 35" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c36.webp" alt="client 36" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c37.webp" alt="client37" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c38.webp" alt="client 38" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c39.webp" alt="client 39" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c40.webp" alt="client 40" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c41.webp" alt="client 41" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c42.webp" alt="client 42" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c43.webp" alt="client 43" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c44.webp" alt="client 44" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c45.webp" alt="client 45" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c46.webp" alt="client 46" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c47.webp" alt="client 47" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c48.webp" alt="client 48" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c49.webp" alt="client 49" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c50.webp" alt="client 50" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c51.webp" alt="client 51" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c52.webp" alt="client 52" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c53.webp" alt="client 53" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c54.webp" alt="client 54" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c55.webp" alt="client 55" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c56.webp" alt="client 56" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c57.webp" alt="client 56" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c58.webp" alt="client 57" class="max-w-[100%] mx-auto"></div>
+                    <div><img  src="images/brandWebp/c59.webp" alt="client 58" class="max-w-[100%] mx-auto"></div>
                 </div>
             </div>
         </div>
@@ -664,10 +743,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2 class="text-3xl md:text-4xl text-black font-semibold mb-[48px] montserrat">Awards & Recognition</h2>
             <div class="flex justify-center gap-6 flex-wrap">
                 <div class="bg-[#F0F8FD] py-8 w-full md:w-[420px] rounded-xl">
-                    <img src="images/brand/pharma.png" alt="Pharma Outlook Award" class="mx-auto h-36 md:max-w-full">
+                    <img  src="images/brandWebp/pharma.webp" alt="Pharma Outlook Award" class="mx-auto h-36 md:max-w-full">
                 </div>
                 <div class="bg-[#F0F8FD] py-8 rounded-xl  w-full md:w-[420px]">
-                    <img src="images/brand/silicon.png" alt="Silicon India Award" class="mx-auto max-w-full h-36">
+                    <img  src="images/brandWebp/silicon.webp" alt="Silicon India Award" class="mx-auto max-w-full h-36">
                 </div>
             </div>
             <div class="mt-[30px] md:mt-[61px] flex justify-center">
@@ -762,42 +841,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
         <div class="container mx-auto px-4 mt-[70px]">
-            <h2 class="text-[26px] md:text-4xl md:4xl montserrat font-semibold mb-[40px] text-center text-black">Our Active Stores in Bihar & Jharkhand</h2>
+            <h2 class="text-[26px] md:text-4xl md:4xl montserrat font-semibold mb-[40px] text-center text-black">Our Stores in Bihar & Jharkhand</h2>
             <div class="flex flex-wrap justify-center gap-6">
   <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image.jpg" alt="Store in Ramnagri, Patna" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image.webp" alt="Store in Ramnagri, Patna" class="w-full rounded-lg">
                     <p class="mt-3  text-center montserrat font-semibold text-md">Ramnagri, Patna</p>
                 </div>
 <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image1.jpg" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image1.webp" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
                     <p class="mt-3 text-center montserrat font-semibold text-md">East Ram Krishna Nagar, Patna</p>
                 </div>
 <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image5.jpg" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image5.webp" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
                     <p class="mt-3 text-center montserrat font-semibold text-md">Pharmacy College More, Patna </p>
                 </div>
 <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image7.jpg" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image7.webp" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
                     <p class="mt-3  text-center montserrat font-semibold text-md">Bariatu, Ranchi </p>
                 </div>
 <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image2.jpg" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image2.webp" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
                     <p class="mt-3  text-center montserrat font-semibold text-md">Post Office Road, Raxaul</p>
                 </div>
 <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image4.jpg" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image4.webp" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
                     <p class="mt-3  text-center montserrat font-semibold text-md">Balua Tal, Motihari</p>
                 </div>
 <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image3.jpg" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image3.webp" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
                     <p class="mt-3 text-center montserrat font-semibold text-md">Ramdayalu, Muzaffarpur</p>
                 </div>
 <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image9.jpg" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image9.webp" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
                     <p class="mt-3  text-center montserrat font-semibold text-md">Godhna Road, Arrah</p>
                 </div>
 <div class="w-[45%] sm:w-[30%] lg:w-[18%] bg-white p-4 rounded-[16px]">
-                    <img src="images/stores/image6.jpg" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
+                    <img  src="images/storewebp/image6.webp" alt="Store in Ram Krishna Nagar" class="w-full rounded-lg">
                     <p class="mt-3  text-center montserrat font-semibold text-md">Ekma, Saran</p>
                 </div>
 
@@ -949,15 +1028,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!-- Modal Body -->
                 <div class="py-4 px-8">
                     <p class="text-gray-600 mb-4">Fill in your details and let our team get back to you.</p>
-                     <iframe loading="lazy" src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 450px;" id="myIframe"> </iframe>
+                     <iframe  src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 450px;" id="myIframe"> </iframe>
                 </div>
             </div>
+
         </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="script.js" defer></script>
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="script.js"></script>
 </body>
 
 </html>
