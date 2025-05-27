@@ -48,7 +48,16 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5S4JGR');</script>
     <!-- End Google Tag Manager -->
-
+    <script>
+        dataLayer.push({
+          'event':'EC_FormSubmit',
+          'enhanced_conversion_data': {
+            "email": 'yourEmailVariable',  
+            "phone_number": 'yourPhoneVariable'
+          }
+        })
+      </script>
+      
 
 </head>
 
