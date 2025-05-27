@@ -119,7 +119,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="md:w-1/3 bg-white p-6 rounded-lg shadow-lg hidden md:block">
                 <h2 class="text-xl font-bold mb-4">Easy-to-start business opportunity!</h2>
                 <p class="text-gray-600 mb-4">Fill in your details and let our team get back to you.</p>
-               <iframe  src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 570px;" id="myIframe"> </iframe>
+               <iframe  src="https://www.emedix.in/crm/lead" frameborder="0" scrolling="yes"  style="width: 100%; height: 470px;" id="myIframe"> </iframe>
+               <script>
+                var loc = window.location.toString(),
+                params = loc.split('?')[1],
+                iframe = document.getElementById('myIframe');
+            
+                iframe.src = iframe.src + '?' + params; 
+            </script>
             </div>
         </div>
     </section>
@@ -128,7 +135,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-lg block shadow-md ">
                 <h2 class="text-xl font-bold mb-4">Easy-to-start business opportunity!</h2>
                 <p class="text-gray-600 mb-4">Fill in your details and let our team get back to you.</p>
-               <iframe  src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 570px;" id="myIframe"> </iframe>
+               <iframe  src="https://www.emedix.in/crm/lead" frameborder="0" scrolling="yes"  style="width: 100%; height: 570px;" id="myIframe4"> </iframe>
+               <script>
+                var  iframe4 = document.getElementById('myIframe4');
+            
+                iframe4.src = iframe4.src + '?' + params; 
+            </script>
             </div>
         </div>
     </section>
@@ -1028,8 +1040,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!-- Modal Body -->
                 <div class="py-4 px-8">
                     <p class="text-gray-600 mb-4">Fill in your details and let our team get back to you.</p>
-                     <iframe  src="https://www.emedix.in/crm/lead?undefined" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 450px;" id="myIframe"> </iframe>
-                </div>
+                     <iframe  src="https://www.emedix.in/crm/lead" frameborder="0" scrolling="yes"  style="width: 100%; height: 450px;" id="myIframe5"> </iframe>
+                     <script>
+                        var  myIframe5 = document.getElementById('myIframe5');
+                    
+                        myIframe5.src = myIframe5.src + '?' + params; 
+                    </script>
+                    </div>
             </div>
 
         </div>
