@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Start your own pharmacy business with eMedix. Low investment, high returns, and comprehensive support. Join our franchise network today!">
@@ -10,6 +11,7 @@
     <meta name="author" content="eMedix Wellness Pvt Ltd">
     <meta name="robots" content="index, follow">
     <title>Start Your Own Pharmacy Business</title>
+
     <link rel="preload" fetchpriority="high" as="image" href="images/banner.webp" imagesrcset="images/mb.webp 768w, images/banner.webp 1200w" imagesizes="(max-width: 768px) 100vw, 1200px">   
     <link rel="preload" href="images/covge/slide1.webp" as="image">
     <link rel="preload" href="images/covge/slide2.webp" as="image">
@@ -44,6 +46,7 @@
 
 
     <link rel="stylesheet" href="style.css" />
+    EAAJmyX03aR8BOzdsUxey0qhYaT5bXWWQLnxo9uil7RmrhZBY7HRrAA1ZAy20hJ3gskTFhDZBLTJA60YLMbEIeYOx6eYrYQEnzqTZCSG99FXe9Kwk37UoVrcHUrpxG0F4ZChz5NskwlpYsucMsZCNMYDBTArnBzFW3nuI3sIvOQbVkPMni8l0ttTP8aM41fvGx1PAZDZD
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
