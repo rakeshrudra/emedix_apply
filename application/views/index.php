@@ -46,7 +46,6 @@
 
 
     <link rel="stylesheet" href="style.css" />
-    EAAJmyX03aR8BOzdsUxey0qhYaT5bXWWQLnxo9uil7RmrhZBY7HRrAA1ZAy20hJ3gskTFhDZBLTJA60YLMbEIeYOx6eYrYQEnzqTZCSG99FXe9Kwk37UoVrcHUrpxG0F4ZChz5NskwlpYsucMsZCNMYDBTArnBzFW3nuI3sIvOQbVkPMni8l0ttTP8aM41fvGx1PAZDZD
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -91,7 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
         <div class="container mx-auto px-4 flex justify-between flex-col md:flex-row items-center relative z-10">
             <div class="md:w-[55%] mb-8 md:mb-0">
-                <h1 class="text-[27px] md:text-[46px] leading-[40px] text-left md:leading-[60px] font-bold text-black mb-[25px] md:pe-16">Start your own pharmacy business <span class="text-primary">without any pharma background.</span></h1>
+                <h1 class="text-[27px] md:text-[46px] leading-[40px] text-left md:leading-[60px] font-bold text-black mb-[25px] md:pe-16">Having pharma degree or not?   <span class="text-primary"> Start your own pharmacy business with eMedix, easily.</span></h1>
                 <ul class="space-y-2 text-gray-600 flex md:flex-row  items-center justify-start mb-[36px] flex-wrap">
                     <li class="flex items-center text-black font-semibold text-xl montserrat m-0 md:me-4 md:mb-0 mb-[15px]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2AB4AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk-icon lucide-asterisk">
