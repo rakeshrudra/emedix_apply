@@ -11,7 +11,6 @@
     <meta name="author" content="eMedix Wellness Pvt Ltd">
     <meta name="robots" content="index, follow">
     <title>Start Your Own Pharmacy Business</title>
-
     <link rel="preload" fetchpriority="high" as="image" href="images/banner.webp" imagesrcset="images/mb.webp 768w, images/banner.webp 1200w" imagesizes="(max-width: 768px) 100vw, 1200px">   
     <link rel="preload" href="images/covge/slide1.webp" as="image">
     <link rel="preload" href="images/covge/slide2.webp" as="image">
@@ -247,7 +246,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </button>
                         <div x-show="openIndex === 0" x-transition:enter="transition-all duration-500 ease-in-out" x-transition:enter-start="opacity-0 max-h-0" x-transition:enter-end="opacity-100 max-h-[500px]" x-transition:leave="transition-all duration-500 ease-in-out" x-transition:leave-start="opacity-100 max-h-[500px]"
                         x-transition:leave-end="opacity-0 max-h-0" class="text-sm roboto font-normal text-gray pl-[36px] pb-4 overflow-hidden">
-                            9.5 Lakh + GST (no hidden charges)
+                            11.5 Lakh + GST (no hidden charges)
                         </div>
                     </div>
 
