@@ -115,7 +115,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </li>
                 </ul>
                 <div class="text-center md:pt-0-0 flex justify-start">
-                    <a href="#" class="bg-[#D8F6FF]  px-4 md:px-8 py-5 rounded-[12px] border border-[#14A5CA] font-semibold text-black montserrat text-xl md:text-2xl">Franchise fees <span class="text-[#2AB4AE] font-bold montserrat">9.5 Lakh + GST</span></a>
+                    <a href="#" class="bg-[#D8F6FF]  px-4 md:px-8 py-5 rounded-[12px] border border-[#14A5CA] font-semibold text-black montserrat text-xl md:text-2xl">Franchise fees <span class="text-[#2AB4AE] font-bold montserrat">11.5 Lakh + GST</span></a>
                 </div>
             </div>
             <div class="md:w-1/3 bg-white p-6 rounded-lg shadow-lg hidden md:block">
